@@ -1,0 +1,53 @@
+* { /*Aqui definimos que el diseño ocupe toda la pantalla*/
+    padding: 0; 
+    margin: 0;
+  }
+  
+  /*Agregamos margenes inferiores a los parrafos*/
+  p {
+    margin-bottom: 30px; /*Se establece el margen de la parte inferior*/
+    
+  }
+  
+  header { 
+    background: rgba(193, 15, 30 ,0.9); /*Con esta propiedad elegimos el color de la barra y agregando un 4to numero al final podemos escoger si se quiere tener un efecto de transparencia*/
+    width: 100%;/*Se define que la barra ocupe toda la pantalla*/ 
+    position: fixed; /*Con la propiedad position especificamos donde se va posicionar la barra de menu si la ponemos en fixed siempre se va a ver asi hagamos scroll*/
+    z-index: 100;
+  }
+  
+  nav {
+    float: inline; /* Aqui se puede desplazar el nav*/
+  }
+  
+  nav ul {
+    list-style: none; /*Esta opcion se la ponemos para que no muestre ningun */
+    overflow: hidden; /*Nos permite regular la visibilidad cuando se hace scroll*/
+  }
+  
+  nav ul li {
+    float: left; /*Con esta propiedad se alniea el texto del menu a la izquierda*/
+    font-family: Arial, sans-serif;
+    font-size: 20px; /*Se elige el tamaño del menu*/
+  }
+  
+  nav ul li a {
+    display: block; /* Se convierten los elementos en un bloque */
+    padding: 30px; /*Se define el ancho de las opciones*/
+    color: #fff; /*Se define el color de la letra al interior del menu*/
+    text-decoration: none;/*Con esto quitamos o ponemos el underline en las opciones*/
+  }
+  
+  nav ul li:hover {
+    background: #0437b8; /*Se define el color azul para el cambio de la seccion cuando se elige*/
+  }
+  
+  .contenido {
+    padding-top: 100px; /*Alineamos el contenido para que no quede pegado al margen superior*/
+  }
+  
+  .principal {
+    width: 80%;
+    margin: auto;/*Alineamos el contenido para que quede centrado*/
+    overflow:hidden;
+  }

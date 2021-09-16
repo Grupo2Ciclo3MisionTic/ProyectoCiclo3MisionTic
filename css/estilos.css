@@ -51,3 +51,17 @@
     margin: auto;/*Alineamos el contenido para que quede centrado*/
     overflow:hidden;
   }
+
+  .boton_2{
+    text-decoration: none;
+    font-family: arial;
+    width: 50px;
+    height: 30px;
+    font-size: 6px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+  }
+  .boton_2:hover{
+    background-color: #1100ff;
+    text-decoration: none;
+  }

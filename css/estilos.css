@@ -66,4 +66,35 @@
     background-color: #1100ff;
     text-decoration: none;
   }
-  
+  .boton_1{
+    border-radius: 20px;
+    float: center;
+    text-decoration: none;
+    font-family: arial;
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+  }
+  .boton_1:hover{
+    background-color: #ff0000;
+    text-decoration: none;
+  }
+
+  input[type=text] {
+    border: 2px solid green;
+    border-radius: 4px;
+  }
+  input[type=email] {
+    border: 2px solid green;
+    border-radius: 4px;
+  }
+  input[type=password] {
+    border: 2px solid green;
+    border-radius: 4px;
+  }
+  input[type=radio] {
+    border: 2px solid green;
+    border-radius: 4px;
+  }

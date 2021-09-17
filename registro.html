@@ -1,1 +1,25 @@
-hola 
+<!DOCTYPE html> 
+<html lang="en">
+  <head> <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+  </head> 
+  <body> 
+    <h1>Formulario de Registro<h1>
+      <div id="formRegistro" align="center" width="100" height="200">
+        <form action="registro.html" method="POST">
+          Nombre completo:<input type="text" name="campoNombre" class="redondeado"><br>
+          Sexo: <input type="radio" name="botonSexo" value="1">Femenino<input type="radio" name="botonSexo" value="2">Masculino<br>
+              Usuario: <input type="text" name="campoUsuario"><br>
+          Contraseña:<input type="password" name="password"><br>
+          Teléfono: <input type="text" name="campoTeléfono"><br>
+          Dirección de residencia: <input type="text" name="campoDireccion"><br>
+          Correo electrónico: <input type="email" name="campoEmail" id="email"
+       pattern=".+@globex\.com" size="30" required><br>
+          Confirmar correo electrónico: <input type="email" name="campoConfirmar" id="email"
+       pattern=".+@globex\.com" size="30" required><br>
+          </div>
+  </body> 
+</html>
+

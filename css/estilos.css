@@ -2,6 +2,10 @@
     padding: 0; 
     margin: 0;
   }
+
+  #seccion{
+    width:100%;
+  }
   
   /*Agregamos margenes inferiores a los parrafos*/
   p {
@@ -52,7 +56,7 @@
     overflow:hidden;
   }
 
-  .boton_2{
+  #Registerbutton{
     float: right;
     text-decoration: none;
     font-family: arial;
@@ -62,7 +66,7 @@
     color: rgb(0, 0, 0);
     background-color: #ffffff;
   }
-  .boton_2:hover{
+  #Registerbutton:hover{
     background-color: #1100ff;
     text-decoration: none;
   }
@@ -97,4 +101,44 @@
   input[type=radio] {
     border: 2px solid green;
     border-radius: 4px;
+  }
+
+  h1{
+    width:500px;
+    margin:25px auto;
+    text-align:center;
+    color:#000000;
+    font-family:sans-serif;
+    
+  }
+
+  #fondo{
+    background-color:#dbb1b1;
+  }
+
+  #formRegistro{
+
+    width:100px;
+    height:200px;
+    margin:10px auto;
+    color:#000000;
+    font-family:sans-serif;
+    font-size: 15px;
+    text-align:justify;
+    /*justify-content:center;*/
+  }
+  #boton_registro{
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  text-shadow: 1px 1px 15px #fdfcfc;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 6px 120px;
+  background: #3a3838;
+  border: solid #ffffff 1px;
+  text-decoration: none;
+  width: 100%;
+  text-align:center;
   }

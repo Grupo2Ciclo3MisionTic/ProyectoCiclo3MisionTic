@@ -12,12 +12,18 @@
         <section id="seccion">
 
           <div id="formRegistro">
-          <form action="registro.html" method="POST">
+          <form action="registro.html" method="post">
           Nombre completo:<br>
-          <input type="text" name="campoNombre" class="redondeado"><br>
+          <input type="text" name="campoNombre" class="redondeado"><br><br>
           Sexo: <br>
-          <input type="radio" name="botonSexo" value="1">Femenino<br>
-          <input type="radio" name="botonSexo" value="2">Masculino<br>
+          <label for="">
+          <input type="radio" name="botonSexo" value="1">
+          Femenino
+        </label><br><br>
+          <label for="">
+          <input type="radio" name="botonSexo" value="2">
+          Masculino
+        </label><br><br>
           Usuario: <input type="text" name="campoUsuario"><br>
           Contraseña:<input type="password" name="password"><br>
           Teléfono:<input  type="text" id="campoTel" name="txtTel" onblur="JavaScript:validar_telefono(campoTel.value);"> <br>

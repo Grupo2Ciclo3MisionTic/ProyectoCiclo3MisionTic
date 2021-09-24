@@ -89,14 +89,26 @@
   input[type=text] {
     border: 2px solid green;
     border-radius: 4px;
+    padding : 0 10px;
+    margin  : 0;
+    width   : 240px;
+    background: #ffffff;
   }
   input[type=email] {
     border: 2px solid green;
     border-radius: 4px;
+    padding : 0 10px;
+    margin  : 0;
+    width   : 240px;
+    background: #ffffff;
   }
   input[type=password] {
     border: 2px solid green;
     border-radius: 4px;
+    padding : 0 10px;
+    margin  : 0;
+    width   : 240px;
+    background: #ffffff;
   }
   input[type=radio] {
     border: 2px solid green;
@@ -125,7 +137,7 @@
     font-family:sans-serif;
     font-size: 15px;
     text-align:justify;
-    /*justify-content:center;*/
+    justify-content:center;
   }
   #boton_registro{
   -webkit-border-radius: 4;
@@ -135,10 +147,11 @@
   font-family: sans-serif;
   color: #ffffff;
   font-size: 13px;
-  padding: 6px 120px;
+  padding: 6px 130px;
   background: #3a3838;
   border: solid #ffffff 1px;
   text-decoration: none;
   width: 100%;
   text-align:center;
+  margin-bottom: 30px;
   }

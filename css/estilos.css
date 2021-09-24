@@ -1,10 +1,8 @@
+/*Estos son los estilos del index*/
+
 * { /*Aqui definimos que el diseño ocupe toda la pantalla*/
     padding: 0; 
     margin: 0;
-  }
-
-  #seccion{
-    width:100%;
   }
   
   /*Agregamos margenes inferiores a los parrafos*/
@@ -12,9 +10,9 @@
     margin-bottom: 30px; /*Se establece el margen de la parte inferior*/
     
   }
-  
+
   header { 
-    background: rgba(193, 15, 30 ,0.9); /*Con esta propiedad elegimos el color de la barra y agregando un 4to numero al final podemos escoger si se quiere tener un efecto de transparencia*/
+    background: rgba(193, 15, 15 ,0.9); /*Con esta propiedad elegimos el color de la barra y agregando un 4to numero al final podemos escoger si se quiere tener un efecto de transparencia*/
     width: 100%;/*Se define que la barra ocupe toda la pantalla*/ 
     position: fixed; /*Con la propiedad position especificamos donde se va posicionar la barra de menu si la ponemos en fixed siempre se va a ver asi hagamos scroll*/
     z-index: 100;
@@ -82,9 +80,22 @@
     background-color: #ffffff;
   }
   .boton_1:hover{
-    background-color: #ff0000;
+    background-color: #c10f0f;
     text-decoration: none;
   }
+
+  /*Desde aqui comienzan los estilos del Formulario*/
+
+  fieldset /*Con esta propiedad demarcamos el campo de registro entre un recuadro*/
+{
+  background-color:#CCC;
+  max-width:500px;
+  padding:16px;	
+  border:2px solid rgb(0, 0, 0);
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;	
+   border-radius:8px;
+}
 
   input[type=text] {
     border: 2px solid green;
@@ -111,7 +122,7 @@
     background: #ffffff;
   }
   input[type=radio] {
-    border: 2px solid green;
+    border: 3px solid green;
     border-radius: 4px;
   }
 
@@ -125,7 +136,7 @@
   }
 
   #fondo{
-    background-color:#dbb1b1;
+    background-color:#ffff;
   }
 
   #formRegistro{
@@ -136,9 +147,10 @@
     color:#000000;
     font-family:sans-serif;
     font-size: 15px;
-    text-align:justify;
+    text-align:left;
     justify-content:center;
   }
+
   #boton_registro{
   -webkit-border-radius: 4;
   -moz-border-radius: 4;
@@ -147,11 +159,15 @@
   font-family: sans-serif;
   color: #ffffff;
   font-size: 13px;
-  padding: 6px 130px;
-  background: #3a3838;
-  border: solid #ffffff 1px;
+  padding: 6px 150px;
+  background: #000000;
+  border: solid #000000 2px;
   text-decoration: none;
   width: 100%;
   text-align:center;
   margin-bottom: 30px;
+  }
+
+  #boton_registro:hover{
+    background-color: #c9c9c9;
   }

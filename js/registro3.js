@@ -26,9 +26,7 @@ function retornarCuenta(args){
     }
     return ocurrencias;  
     
-
 }
-
 
 module.exports.buscarDominio = buscarDominio();
 module.exports.retornarCuenta = retornarCuenta();

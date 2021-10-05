@@ -12,7 +12,7 @@
   }
 
   header { 
-    background: rgba(193, 15, 15 ,0.9); /*Con esta propiedad elegimos el color de la barra y agregando un 4to numero al final podemos escoger si se quiere tener un efecto de transparencia*/
+    background: rgba(15, 193, 184, 0.9); /*Con esta propiedad elegimos el color de la barra y agregando un 4to numero al final podemos escoger si se quiere tener un efecto de transparencia*/
     width: 100%;/*Se define que la barra ocupe toda la pantalla*/ 
     position: fixed; /*Con la propiedad position especificamos donde se va posicionar la barra de menu si la ponemos en fixed siempre se va a ver asi hagamos scroll*/
     z-index: 100;
@@ -80,11 +80,12 @@
     background-color: #ffffff;
   }
   .boton_1:hover{
-    background-color: #c10f0f;
+    background-color: #0FBEB8;
     text-decoration: none;
   }
 
   /*Desde aqui comienzan los estilos del Formulario*/
+
 
   fieldset /*Con esta propiedad demarcamos el campo de registro entre un recuadro*/
 {
@@ -95,6 +96,7 @@
   -moz-border-radius:8px;
   -webkit-border-radius:8px;	
    border-radius:8px;
+   
 }
 
   input[type=text] {
@@ -136,7 +138,7 @@
   }
 
   #fondo{
-    background-color:#ffff;
+    background-color:rgb(215, 246, 248);
   }
 
   #formRegistro{
@@ -149,6 +151,7 @@
     font-size: 15px;
     text-align:left;
     justify-content:center;
+    margin-bottom: 30px; 
   }
 
   #boton_registro{
@@ -165,7 +168,7 @@
   text-decoration: none;
   width: 100%;
   text-align:center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   }
 
   #boton_registro:hover{

@@ -1,32 +1,37 @@
-function buscarDominio(arreglo){
-    var args = [];
-    for (var i = 0; i< arreglo.length; i++){
+var registros = [{
+    nombre: "",
+    usuario: "",
+    password: "",
+    telefono: "",
+    direccion: "",
+    correo: ""
+}]
 
-        if(arreglo[i].campoCorreoElectronico.split("@")[1] == "upb.edu.co"){
-        
-        args.push(arreglo);
+function buscarDominio(arreglo){
+    var arregloDominios = [];
+    for(index in arreglo){
+        if(arreglo[index]["correo"].includes('@upb.edu.co')){
+            arregloDominios.push(arreglo[index]);
         }
     }
-    return(args);
+    return arregloDominios;    
 }
 
 function retornarCuenta(args){
     var ocurrencias = 0;
-    for (var i= 0; i<args.length; i++){
-
-        if(args[i].campoNombre.starsWith("a")){
-            
-            if(args[i].campoTelefono.endsWith("0") || args[i].campoTelefono.endsWith("4")){
-                
-                ocurrencias ++;
-                console.log(ocurrencias);
+    for(index in args){
+        if(args[index]["nombre"].includes('a')){
+            console.log("El nombre tiene 'a");
+            if(args[index]["telefono"].endsWith('4') || args[index]["telefono"].endsWith('0')){
+                console.log("El telefono termina en '4' o en '0'");
+                ocurrencias++;
             }
-
-        }
+        } 
     }
-    return ocurrencias;  
-    
-}
-
-module.exports.buscarDominio = buscarDominio();
-module.exports.retornarCuenta = retornarCuenta();
+    return ocurrencias;    
+}                         
+            
+            
+module.exports.registros = registros;
+module.exports.buscarDominio = buscarDominio;
+module.exports.retornarCuenta = retornarCuenta;

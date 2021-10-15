@@ -10,10 +10,9 @@
       <h1>Formulario de Registro<h1>
 
           <div id="formRegistro">
-          <form action="registro.html" method="post">
+          <form id = "formRegistro" action="registro.html" method="post">
           <fieldset>
-          <legend>Datos Basicos</legend>
-          
+  
           Nombre completo:<br>
           <input type="text" name="campoNombre" class="redondeado"><br><br>
           Sexo: <br>
@@ -25,19 +24,18 @@
           <input type="radio" name="botonSexo" value="2">
           Masculino
         </label><br><br>
-          Usuario: <input type="text" id="campoUsuario" name="campoUsuario"><br>
-          Contraseña:<input type="password" id="password" name="password"><br>
-          Teléfono:<input  type="text" id="campoTel" name="txtTel" onblur="JavaScript:validar_telefono(campoTel.value);"> <br>
-          Dirección de residencia: <input type="text" id="campoDireccion" name="campoDireccion" onblur="JavaScript:validar_direccion(campoDireccion.value);"><br>
-          Correo electrónico: <input type="email" name="campoEmail" id="email" pattern=".+@globex\.com" size="30" required><br>
-          Confirmar correo electrónico: <input type="email" name="campoConfirmar" id="email" pattern=".+@globex\.com" size="30" required><br>
-          </fieldset>
-        </form><br>
-        <input type="button" id="boton_registro" value="Enviar">
-        <br>
-        </div>  
+          Usuario: <input type="text" id="campoUsuario" name="campoUsuario"><br><br>
+          Contraseña:<input type="password" id="password" name="password"><br><br>
+          Teléfono:<input  type="text" id="campoTel" name="txtTel" onblur="JavaScript:validar_telefono(campoTel.value);"> <br><br>
+          Dirección de residencia: <input type="text" id="campoDireccion" name="campoDireccion" onblur="JavaScript:validar_direccion(campoDireccion.value);"><br><br>
+          Correo electrónico: <input type="email" name="campoEmail" id="email" pattern=".+@globex\.com" size="30" required><br><br>
+          Confirmar correo electrónico: <input type="email" name="campoConfirmar" id="email" pattern=".+@globex\.com" size="30" required><br><br>
+          <button type="button" id="boton_registro"  value="Enviar" onclick="registro()">Registro</button>  
+        </fieldset>
+        </form>
+        </div> 
+        <script src="js/form3.js"></script>
+        <script src="js/registro3.js"></script>
     </body> 
-  <script src="js/form3.js"></script>
-  <script src="js/registro3.js"></script>
 </html>
 

@@ -1,0 +1,1 @@
+SELECT * FROM usuarios WHERE correo like "%upb.edu.co";

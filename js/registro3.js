@@ -1,21 +1,12 @@
-/*var registros = [{
+
+var registros = [{
     nombre: "",
     usuario: "",
     password: "",
     telefono: "",
     direccion: "",
     correo: ""
-}]*/
-
-let objeto = {
-    'nombre':document.getElementById('campoNombre').value,
-    'usuario':document.getElementById('campoUsuario').value,
-    'direccion':document.getElementById('campoDireccion').value,
-    'contrasena':document.getElementById('campoContrasena').value,
-    'correo':document.getElementById('campoCorreo').value,
-    'confirmacioncorreo':document.getElementById('campoConfirmacionCorreo').value,
-    'telefono':document.getElementById('campoTelefono').value
-}
+}]
 
 function buscarDominio(arreglo){
     var arregloDominios = [];
@@ -41,6 +32,7 @@ function retornarCuenta(args){
     }
     return ocurrencias;    
 }                         
+            
             
 module.exports.registros = registros;
 module.exports.buscarDominio = buscarDominio;

@@ -1,24 +1,19 @@
-
-var registros = [{
-    nombre: "",
-    usuario: "",
-    password: "",
-    telefono: "",
-    direccion: "",
-    correo: ""
-}]
+var registros = [];
 
 function buscarDominio(arreglo){
-    var arregloDominios = [];
-    for(index in arreglo){
-        if(arreglo[index]["correo"].includes('@upb.edu.co')){
-            arregloDominios.push(arreglo[index]);
-        }
+    var datos= {
+        nombre: document.getElementById('campoNombre').value,
+        usuario: document.getElementById('campoUsuario').value,
+        contrasena: document.getElementById('campoContrasena').value,
+        telefono: document.getElementById('campoTelefono').value,
+        direccion: document.getElementById('campoDireccion').value,
+        correo: document.getElementById('campoCorreo').value,
+        confirmacionCorreo: document.getElementById('campoConfirmacionCorreo').value
     }
-    return arregloDominios;    
+    registros.push(datos);
+    
+    return registros.filter(data => data.correo.includes('upb.edu.co'));;
 }
-
-
 function retornarCuenta(args){
     var ocurrencias = 0;
     for(index in args){
@@ -34,6 +29,7 @@ function retornarCuenta(args){
 }                         
             
             
-module.exports.registros = registros;
+
 module.exports.buscarDominio = buscarDominio;
 module.exports.retornarCuenta = retornarCuenta;
+module.exports.registros = registros;

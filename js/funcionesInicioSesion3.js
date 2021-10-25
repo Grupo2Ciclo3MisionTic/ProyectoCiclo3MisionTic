@@ -1,75 +1,47 @@
-console.log("conectado")
+const registros = [];
 
-var registros = [{
-    nombre: "",
-    usuario: "",
-    password: "",
-    telefono: "",
-    direccion: "",
-    correo: ""
-}]
+var correo = document.getElementById("campoUsuarioCorreo");
+var contraseña = document.getElementById("campoUsuarioContrasena");
 
-var arreglo1 = [
-    {
-    nombre: "Rafael",
-    usuario: "rafa",
-    password: "1234",
-    telefono: "4567890",
-    direccion: "Calle 2",
-    correo: "rafa@upb.edu.co"
-    },
-    {
-    nombre: "Sofia",
-    usuario: "sofi",
-    password: "4321",
-    telefono: "3004958",
-    direccion: "Calle 2",
-    correo: "sofi@iue.edu.co"
-    },
-    {
-    nombre: "Yuri",
-    usuario: "yuri",
-    password: "9876",
-    telefono: "4536478",
-    direccion: "Calle 2",
-    correo: "yur@upb.edu.co"
+function buscarDominio() {
+    var datos = {
+        nombre: document.getElementById('campoNombre').value,
+        usuario: document.getElementById('campoUsuario').value,
+        contrasena: document.getElementById('campoContrasena').value,
+        telefono: document.getElementById('campoTelefono').value,
+        direccion: document.getElementById('campoDireccion').value,
+        correo: document.getElementById('campoCorreo').value,
+        confirmacionCorreo: document.getElementById('campoConfirmacionCorreo').value
     }
-];
+    registros.push(datos);
 
-arreglo=buscarDominio(arreglo1);
-
-
-var email = document.getElementById("campoUsuarioCorreo");
-var password = document.getElementById("campoUsuarioContrasena");
+    return registros.filter(data => data.correo.includes('upb.edu.co'));;
+}
 
 
-function buscarDominio(arreglo){
-    var arregloDominios = [];
-    for(index in arreglo){
-        if(arreglo[index]["correo"].includes('@upb.edu.co')){
-            arregloDominios.push(arreglo[index]);
+function verificarInicioSesion3(correo, contraseña, arreglo) {
+    for (k in arreglo) {
+        if (arreglo[k].correo == correo | arreglo[k].contraseña == contraseña) {
+            let respuesta = verificarCaptcha3()
+            return respuesta
+        } else {
+            return false
         }
     }
-    return arregloDominios;    
 }
 
-verificarInicioSesion3(email,password,arreglo);
-
-function verificarInicioSesion3(correo,contrasena,arreglo){
-let respuesta = prompt("¿Cuál es el factorial de 6?")
-}
-
-
-
-function verificarCaptcha3(respuesta){
-if (respuesta == 720){
-    return true;
-}else{return false;}
-
+function verificarCaptcha3() {
+    let respuesta = window.prompt("What's your sign?");
+    if (respuesta == 720) {
+        return true;
+    } else {
+        return false
+    }
 }
 
 
 
+module.exports.buscarDominio = buscarDominio;
 module.exports.verificarInicioSesion3 = verificarInicioSesion3;
 module.exports.verificarCaptcha3 = verificarCaptcha3;
-module.exports.buscarDominio = buscarDominio;
+module.exports.registros = registros;
